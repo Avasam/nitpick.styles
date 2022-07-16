@@ -15,4 +15,5 @@ style = [
 ]
 ```
 
-You can use nitpick directly as a [cli tool](https://nitpick.readthedocs.io/en/latest/cli.html), or as a [Flake8 plugin](https://nitpick.readthedocs.io/en/latest/flake8_plugin.html)
+You can use nitpick directly as a [cli tool](https://nitpick.readthedocs.io/en/latest/cli.html), or as a [Flake8 plugin](https://nitpick.readthedocs.io/en/latest/flake8_plugin.html)  
+Run `nitpick fix` to update all of your configurations
