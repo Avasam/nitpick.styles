@@ -132,6 +132,9 @@ generated-members = [
 line_length = 120
 combine_as_imports = true
 
+[nitpick.files.".flake8"]
+comma_separated_values = ["flake8.ignore", "flake8.per-file-ignores", "flake8.ignore-names"]
+
 [".flake8".flake8]
 color = "always"
 max-line-length = 120
