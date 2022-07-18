@@ -158,29 +158,81 @@ indent_size = 4
 
 [".vscode/extensions.json".contains_json]
 # Keep in alphabetical order
-recommendations = """
+"recommendations" = """
   [
     "bungcip.better-toml",
     "ms-python.python",
     "ms-python.vscode-pylance",
     "pkief.material-icon-theme",
-    "shardulm94.trailing-spaces",  
+    "shardulm94.trailing-spaces"
   ]
 """
-unwantedRecommendations = """
+"unwantedRecommendations" = """
   [
-    # VSCode has implemented an optimized version
+    // VSCode has implemented an optimized version
     "coenraads.bracket-pair-colorizer",
     "coenraads.bracket-pair-colorizer-2",
-    # Lots of conflicts
+    // Lots of conflicts
     "esbenp.prettier-vscode",
-    # Replaced by ESLint
+    // Replaced by ESLint
     "eg2.tslint",
     "ms-vscode.vscode-typescript-tslint-plugin",
-    # Obsoleted by Pylance
+    // Obsoleted by Pylance
     "ms-pyright.pyright",
-    # Not configurable per workspace, tends to conflict with other linters
-    # Use eslint-plugin-sonarjs for JS/TS projects
-    "sonarsource.sonarlint-vscode",
+    // Not configurable per workspace, tends to conflict with other linters
+    // Use eslint-plugin-sonarjs for JS/TS projects
+    "sonarsource.sonarlint-vscode"
   ]
 """
+
+[".vscode/settings.json".contains_json]
+"files.associations" = """
+  {
+    "*.html": "jinja-html"
+  }
+"""
+"files.exclude" = """
+  {
+    ".mypy_cache": true,
+    "**/__pycache__/": true,
+  }
+"""
+"search.exclude" = """
+  {
+    "typings": true
+  }
+"""
+"[python]" = """
+  {
+    "editor.tabSize": 4,
+    "editor.rulers": [
+      72, // PEP8-17 docstrings
+      // 79, // PEP8-17 default max
+      // 88, // Black default
+      99, // PEP8-17 acceptable max
+      120 // Our hard rule
+    ]
+  }
+"""
+"python.linting.enabled" = "true"
+"python.linting.pylintEnabled" = "true"
+"python.linting.pylintCategorySeverity.convention" = "\"Warning\""
+"python.linting.pylintCategorySeverity.refactor" = "\"Warning\""
+"python.linting.flake8Enabled" = "true"
+# pycodestyles
+"python.linting.flake8CategorySeverity.E" = "\"Warning\""
+# Pyflakes
+"python.linting.flake8CategorySeverity.F" = "\"Warning\""
+# PEP8 Naming convention
+"python.linting.flake8CategorySeverity.N" = "\"Warning\""
+# PYI
+"python.linting.flake8CategorySeverity.Y" = "\"Warning\""
+# PyRight obsoletes mypy
+"python.linting.mypyEnabled" = "false"
+# Is already wrapped by Flake8, prospector and pylama
+"python.linting.pycodestyleEnabled" = "false"
+# Just another wrapper, use Flake8 OR this
+"python.linting.prospectorEnabled" = "false"
+# Just another wrapper, use Flake8 OR this
+"python.linting.pylamaEnabled" = "false"
+"python.linting.banditEnabled" = "true"
