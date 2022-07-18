@@ -175,6 +175,7 @@ unwantedRecommendations = [
   "ms-vscode.vscode-typescript-tslint-plugin",
   # Obsoleted by Pylance
   "ms-pyright.pyright",
-  # Not workspace-configurable, obsoleted by eslint-plugin-sonarjs
+  # Not configurable per workspace, tends to conflict with other linters
+  # Use eslint-plugin-sonarjs for JS/TS projects
   "sonarsource.sonarlint-vscode",
 ]
