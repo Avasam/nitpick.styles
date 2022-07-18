@@ -140,14 +140,14 @@ color = "always"
 max-line-length = 120
 # Linebreak before binary operator
 # Allow imports at the bottom of file
-ignore =  "W503, E402"
+ignore =  "W503,E402"
 # Quotes
 # Allow ... on same line as def
 # Line too long
 # Naming conventions can't be controlled for external libraries
-per-file-ignores = "typings/**: Q000,E704,E501,N8",
+per-file-ignores = "typings/**: Q000,E704,E501,N8"
 # PyQt methods
-ignore-names = "closeEvent, paintEvent, keyPressEvent, mousePressEvent, mouseMoveEvent, mouseReleaseEvent"
+ignore-names = "closeEvent,paintEvent,keyPressEvent,mousePressEvent,mouseMoveEvent,mouseReleaseEvent"
 # McCabe max-complexity is also taken care of by Pylint and doesn't fail the build there
 # So this is the hard limit
 max-complexity = 32
