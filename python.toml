@@ -156,7 +156,7 @@ indent_size = 4
 
 [".vscode/extensions.json"]
 # Keep in alphabetical order
-recommendations=[
+recommendations = [
   "bungcip.better-toml",
   "ms-python.python",
   "ms-python.vscode-pylance",
@@ -164,7 +164,7 @@ recommendations=[
   "shardulm94.trailing-spaces",
   
 ],
-"unwantedRecommendations": [
+"unwantedRecommendations" = [
   # VSCode has implemented an optimized version
   "coenraads.bracket-pair-colorizer",
   "coenraads.bracket-pair-colorizer-2",
