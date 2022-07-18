@@ -153,3 +153,28 @@ combine_as_imports = true
 
 [".editorconfig"."*.py"]
 indent_size = 4
+
+[".vscode/extensions.json"]
+# Keep in alphabetical order
+recommendations=[
+  "bungcip.better-toml",
+  "ms-python.python",
+  "ms-python.vscode-pylance",
+  "pkief.material-icon-theme",
+  "shardulm94.trailing-spaces",
+  
+],
+"unwantedRecommendations": [
+  # VSCode has implemented an optimized version
+  "coenraads.bracket-pair-colorizer",
+  "coenraads.bracket-pair-colorizer-2",
+  # Lots of conflicts
+  "esbenp.prettier-vscode",
+  # Replaced by ESLint
+  "eg2.tslint",
+  "ms-vscode.vscode-typescript-tslint-plugin",
+  # Obsoleted by Pylance
+  "ms-pyright.pyright",
+  # Not workspace-configurable, obsoleted by eslint-plugin-sonarjs
+  "sonarsource.sonarlint-vscode",
+]
