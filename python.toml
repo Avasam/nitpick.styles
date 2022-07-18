@@ -164,7 +164,7 @@ recommendations = [
   "shardulm94.trailing-spaces",
   
 ]
-"unwantedRecommendations" = [
+unwantedRecommendations = [
   # VSCode has implemented an optimized version
   "coenraads.bracket-pair-colorizer",
   "coenraads.bracket-pair-colorizer-2",
