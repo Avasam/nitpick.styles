@@ -162,12 +162,12 @@ indent_size = 4
   [
     "bungcip.better-toml",
     "ms-python.python",
-    "ms-python.vscode-pylance",
+    "ms-python.vscode-pylance"
   ]
 """
 "unwantedRecommendations" = """
   [
-    "ms-pyright.pyright",
+    "ms-pyright.pyright"
   ]
 """
 
