@@ -1,3 +1,31 @@
+  "recommendations" = """
+  [
+    "davidanson.vscode-markdownlint",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "meganrogge.template-string-converter",
+    "mikestead.dotenv",
+    "ms-vscode.vscode-typescript-next",
+    "pkief.material-icon-theme",
+    "shardulm94.trailing-spaces"
+  ]
+"""
+"unwantedRecommendations" = """
+  [
+    // VSCode has implemented an optimized version
+    "coenraads.bracket-pair-colorizer",
+    "coenraads.bracket-pair-colorizer-2",
+    // Lots of conflicts
+    "esbenp.prettier-vscode",
+    // Replaced by ESLint
+    "eg2.tslint",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    // Not configurable per workspace, tends to conflict with other linters
+    // Use eslint-plugin-sonarjs for JS/TS projects
+    "sonarsource.sonarlint-vscode"
+  ]
+"""
+
 "editor.rulers" = "[80,120]"
 "[git-commit]" = """
   {
