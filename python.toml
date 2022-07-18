@@ -151,5 +151,5 @@ combine_as_imports = true
 # max-complexity=32
 # inline-quotes="
 
-[".editorconfig".*.py]
-indent_size = 4
+# [".editorconfig".*.py]
+# indent_size = 4
