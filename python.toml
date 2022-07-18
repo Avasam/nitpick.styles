@@ -194,7 +194,7 @@ indent_size = 4
 "files.exclude" = """
   {
     ".mypy_cache": true,
-    "**/__pycache__/": true,
+    "**/__pycache__/": true
   }
 """
 "search.exclude" = """
