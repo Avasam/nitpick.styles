@@ -133,49 +133,49 @@ line_length = 120
 combine_as_imports = true
 
 [".flake8".flake8]
-# color=always
-# max-line-length=120
-# ignore=
-#   W503, ; Linebreak before binary operator
-#   E402, ; Allow imports at the bottom of file
-# per-file-ignores=
-#     ; Quotes
-#     ; Allow ... on same line as def
-#     ; Line too long
-#     ; Naming conventions can't be controlled for external libraries
-#     typings/**:                     Q000,E704,E501,N8
-# ; PyQt methods
-# ignore-names=closeEvent,paintEvent,keyPressEvent,mousePressEvent,mouseMoveEvent,mouseReleaseEvent
-# ; McCabe max-complexity is also taken care of by Pylint and doesn't fail the build there
-# ; So this is the hard limit
-# max-complexity=32
-# inline-quotes="
+color = "always"
+max-line-length = 120
+ignore = [
+  "W503", # Linebreak before binary operator
+  "E402", # Allow imports at the bottom of file
+]
+per-file-ignores = [
+    # Quotes
+    # Allow ... on same line as def
+    # Line too long
+    # Naming conventions can't be controlled for external libraries
+    ["typings/**:                     Q000,E704,E501,N8"]
+# PyQt methods
+ignore-names = ["closeEvent", "paintEvent", "keyPressEvent", "mousePressEvent", "mouseMoveEvent", "mouseReleaseEvent"]
+# McCabe max-complexity is also taken care of by Pylint and doesn't fail the build there
+# So this is the hard limit
+max-complexity = 32
+inline-quotes = "double"
 
 [".editorconfig"."*.py"]
 indent_size = 4
 
-[".vscode/extensions.json"]
-# Keep in alphabetical order
-recommendations = [
-  "bungcip.better-toml",
-  "ms-python.python",
-  "ms-python.vscode-pylance",
-  "pkief.material-icon-theme",
-  "shardulm94.trailing-spaces",
-  
-]
-unwantedRecommendations = [
-  # VSCode has implemented an optimized version
-  "coenraads.bracket-pair-colorizer",
-  "coenraads.bracket-pair-colorizer-2",
-  # Lots of conflicts
-  "esbenp.prettier-vscode",
-  # Replaced by ESLint
-  "eg2.tslint",
-  "ms-vscode.vscode-typescript-tslint-plugin",
-  # Obsoleted by Pylance
-  "ms-pyright.pyright",
-  # Not configurable per workspace, tends to conflict with other linters
-  # Use eslint-plugin-sonarjs for JS/TS projects
-  "sonarsource.sonarlint-vscode",
-]
+# [".vscode/extensions.json"]
+# # Keep in alphabetical order
+# recommendations = [
+#   "bungcip.better-toml",
+#   "ms-python.python",
+#   "ms-python.vscode-pylance",
+#   "pkief.material-icon-theme",
+#   "shardulm94.trailing-spaces",  
+# ]
+# unwantedRecommendations = [
+#   # VSCode has implemented an optimized version
+#   "coenraads.bracket-pair-colorizer",
+#   "coenraads.bracket-pair-colorizer-2",
+#   # Lots of conflicts
+#   "esbenp.prettier-vscode",
+#   # Replaced by ESLint
+#   "eg2.tslint",
+#   "ms-vscode.vscode-typescript-tslint-plugin",
+#   # Obsoleted by Pylance
+#   "ms-pyright.pyright",
+#   # Not configurable per workspace, tends to conflict with other linters
+#   # Use eslint-plugin-sonarjs for JS/TS projects
+#   "sonarsource.sonarlint-vscode",
+# ]
